@@ -54,18 +54,16 @@ Extracted reference information is stored as a JSON file in the shape of dict, w
 ## Papers not matched by MAG
 There are 69645 papers which were not matched by MAG. 1% (766) of these papers are not downloaded (`aids_not_matched.json` is based on the metadata while the downloader works on the data in the bucket).  
 Arxiv IDs of papers which were not matched and were not downloaded are not included in the final file `parsed_aids_not_matched.json`.
-* **Results on cssh2**: 13558 PDFs, parsed 13558 (100%)
-* **Results on cssh7**: 55321 PDFs, parsed 55303 (99.96%)
-
+* **Results**: 68879 PDFs, parsed 68861 (99.97%)
 
 ## Sampled 100k papers
 100000 papers were sampled randomly from all downloaded and successfully converted PDFs (corresponding Arxiv IDs are in `sampled_aids_100.json`).
-* **Results on cssh2**: 55989, parsed: 55981 (99.98%), time: 97 minutes
-* **Results on cssh7**: 44011, parsed: 44005 (99.98%), time: 77 minutes
+* **Results**: 100000 PDFs, parsed 99986 (99.99%), time: 174 minutes
 
 ## Papers without references in MAG
-There are 387154 Arxiv papers in MAG which have no references. 0.8% (3112) of these papers are not downloaded.
-* **Results on cssh2**: 184909, parsed 184886 (99.99%)
-* **Results on cssh7**: 199133, parsed 199071 (99.97%)
+There are 387154 Arxiv papers in MAG which have no references. 0.8% (3112) of these papers are not downloaded (corresponding Arxiv IDs are in `aids_without_ref.json`).
+* **Results**: 384042 PDFs, parsed 383956 (99.98%)
 
-Extracted from 383956 (99.17%); References-Overall: 7239735; References-Unique: 2582331 (Unique: 35.67%).
+Extracted from 383956 (99.17%):
+* References-Overall: 7239735
+* References-Unique: 2582331 (Unique: 35.67%).
